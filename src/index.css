@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "sans-serif";
+  src: url("/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("/GeistMono-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Edu-Auvic";
+  src: url("/EduAUVICWANTPre-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Funnel-Display";
+  src: url("/FunnelDisplay-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Set default font-family */
+.app .ql-editor {
+  font-family: "sans-serif";
+}
+
+/* Set custom font family in the dropdown options */
+.ql-font span[data-value="sans-serif"]::before {
+  content: "Sans Serif";
+  font-family: sans-serif;
+}
+
+.ql-font span[data-value="Geist"]::before {
+  content: "Geist";
+  font-family: "Geist";
+}
+
+.ql-font span[data-value="Roboto"]::before {
+  content: "Roboto";
+  font-family: "Roboto";
+}
+
+.ql-font span[data-value="Edu-Auvic"]::before {
+  content: "Edu Auvic";
+  font-family: "Edu-Auvic";
+}
+
+.ql-font span[data-value="Funnel-Display"]::before {
+  content: "Funnel Display";
+  font-family: "Funnel-Display";
+}
+
+/* Apply the correct font to the content */
+.ql-font-Geist {
+  font-family: "Geist";
+}
+
+.ql-font-Roboto {
+  font-family: "Roboto";
+}
+
+.ql-font-Edu-Auvic {
+  font-family: "Edu-Auvic";
+}
+
+.ql-font-Funnel-Display {
+  font-family: "Funnel-Display";
+}
+
+/* Body styling */
+body {
+  background: #f3f1f2;
+  font-family: sans-serif;
+}
+
+.app {
+  margin: 1rem 4rem;
+}
+
+.app .ql-container {
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  background: #fefcfc;
+}
+
+.app .ql-snow.ql-toolbar {
+  display: block;
+  background: #eaecec;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.app .ql-editor {
+  min-height: 18em;
+}
